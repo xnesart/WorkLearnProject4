@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkLearnProject4.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d998abe245a3986d1b45611a79008330e1ad6213")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33f4c011408b07a7e639330992148f15434c7fac")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkLearnProject4.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkLearnProject4.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
