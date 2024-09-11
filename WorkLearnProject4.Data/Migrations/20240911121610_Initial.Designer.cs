@@ -12,7 +12,7 @@ using WorkLearnProject4.Data;
 namespace WorkLearnProject4.Data.Migrations
 {
     [DbContext(typeof(LearnBdContext))]
-    [Migration("20240911115401_Initial")]
+    [Migration("20240911121610_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
