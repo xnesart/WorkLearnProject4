@@ -20,39 +20,56 @@ public class CustomersController : Controller
     [HttpGet]
     public IEnumerable<Customer> GetCustomers()
     {
-        _logger.Information("Получаем список всех пользователей");
-        
+        _logger.Information("Getting list of all users");
+
         return CustomersRepository.GetAllCustomers();
     }
 
     [HttpGet("{id}")]
     public ActionResult<Customer> GetCustomerById(Guid id)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Getting user by id {id}");
+        
+        return Ok(CustomersRepository.GetById(id));
     }
 
     [HttpPost]
     public ActionResult<Customer> CreateCustomer(Customer customer)
     {
+        _logger.Information($"Create customer with this parameters {customer}");
+
         CustomersRepository.Add(customer);
+        
         return Ok();
     }
 
     [HttpPut]
     public ActionResult<Customer> UpdateCustomer(Customer customer)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Update customer with this parameters {customer}");
+
+        CustomersRepository.Update(customer);
+
+        return Ok();
     }
-    
+
     [HttpPatch]
     public ActionResult<Customer> PatchCustomer(Customer customer)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Patch customer with this parameters {customer}");
+
+        CustomersRepository.Patch(customer);
+        
+        return Ok();
     }
 
     [HttpDelete]
     public ActionResult<Customer> DeleteCustomer(Guid id)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Delete customer by id {id}");
+
+        CustomersRepository.Delete(id);
+
+        return Ok();
     }
 }
