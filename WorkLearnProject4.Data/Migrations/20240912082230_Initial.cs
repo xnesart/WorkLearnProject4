@@ -47,8 +47,8 @@ namespace WorkLearnProject4.Data.Migrations
                 columns: new[] { "Id", "BirthDate", "Email", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("31bda01e-5285-4e5e-ac50-ebfb46a67331"), new DateTime(1990, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "petr@example.com", "Petr" },
-                    { new Guid("45040642-bdd4-4fc3-9ebe-3e5b33844a5d"), new DateTime(2000, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "nick@example.com", "Nick" }
+                    { new Guid("05d14b86-ac19-4ea9-8103-b7ef5074913f"), new DateTime(1990, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "petr@example.com", "Petr" },
+                    { new Guid("a4b87eb1-ae4f-431a-93c1-88a719d35683"), new DateTime(2000, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "nick@example.com", "Nick" }
                 });
         }
 

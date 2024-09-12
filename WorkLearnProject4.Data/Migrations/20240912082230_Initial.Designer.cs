@@ -12,7 +12,7 @@ using WorkLearnProject4.Data;
 namespace WorkLearnProject4.Data.Migrations
 {
     [DbContext(typeof(LearnBdContext))]
-    [Migration("20240911132014_Initial")]
+    [Migration("20240912082230_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -73,14 +73,14 @@ namespace WorkLearnProject4.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("45040642-bdd4-4fc3-9ebe-3e5b33844a5d"),
+                            Id = new Guid("a4b87eb1-ae4f-431a-93c1-88a719d35683"),
                             BirthDate = new DateTime(2000, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "nick@example.com",
                             Name = "Nick"
                         },
                         new
                         {
-                            Id = new Guid("31bda01e-5285-4e5e-ac50-ebfb46a67331"),
+                            Id = new Guid("05d14b86-ac19-4ea9-8103-b7ef5074913f"),
                             BirthDate = new DateTime(1990, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "petr@example.com",
                             Name = "Petr"

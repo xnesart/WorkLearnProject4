@@ -1,0 +1,344 @@
+2024-09-12 11:18:06.157 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-12 11:18:06.260 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2024-09-12 11:18:06.904 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "https://localhost:7056"
+2024-09-12 11:18:06.905 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5174"
+2024-09-12 11:18:06.905 +03:00  DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly "WorkLearnProject4.API"
+2024-09-12 11:18:06.905 +03:00  INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2024-09-12 11:18:06.905 +03:00  INF [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2024-09-12 11:18:06.908 +03:00  INF [Microsoft.Hosting.Lifetime] Content root path: "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.API"
+2024-09-12 11:18:06.908 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2024-09-12 11:18:09.697 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6J0DNVPN7R"" accepted.
+2024-09-12 11:18:09.699 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6J0DNVPN7R"" started.
+2024-09-12 11:18:09.788 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6J0DNVPN7R" established using the following protocol: Tls12
+2024-09-12 11:18:09.833 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - null null
+2024-09-12 11:18:09.835 +03:00  DBG [Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware] Wildcard detected, all requests with hosts will be allowed.
+2024-09-12 11:18:09.848 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/index.html"'
+2024-09-12 11:18:09.848 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-12 11:18:09.934 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 104.2189ms
+2024-09-12 11:18:10.163 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - null null
+2024-09-12 11:18:10.175 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2024-09-12 11:18:10.176 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-12 11:18:10.274 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 112.2469ms
+2024-09-12 11:18:17.716 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/api/Customers""" - null null
+2024-09-12 11:18:17.723 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '"/api/Customers"'
+2024-09-12 11:18:17.726 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"' with route pattern '"api/Customers"' is valid for the request path '"/api/Customers"'
+2024-09-12 11:18:17.727 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"'
+2024-09-12 11:18:17.729 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-12 11:18:17.732 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"'
+2024-09-12 11:18:17.749 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"GetCustomers\", controller = \"Customers\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WorkLearnProject4.Data.Models.Customer] GetCustomers()" on controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API").
+2024-09-12 11:18:17.752 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-12 11:18:17.753 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-12 11:18:17.754 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-12 11:18:17.754 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-12 11:18:17.755 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-12 11:18:17.758 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-12 11:18:17.922 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-12 11:18:17.938 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-12 11:18:17.943 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-12 11:18:17.944 +03:00  INF [WorkLearnProject4.API.Controllers.CustomersController] Получаем список всех пользователей
+2024-09-12 11:18:18.469 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-12 11:18:18.513 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Customer>()"'
+2024-09-12 11:18:18.652 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.BirthDate (DateTime) Required, 1], [Property: Customer.Email (string) Required, 2], [Property: Customer.Name (string) Required, 3] }
+        SELECT c.Id, c.BirthDate, c.Email, c.Name
+        FROM Customers AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    WorkLearnProject4.Data.LearnBdContext, 
+    False, 
+    False, 
+    True
+)"'
+2024-09-12 11:18:18.676 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-12 11:18:18.699 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (21ms).
+2024-09-12 11:18:18.701 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:18:18.983 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:18:18.986 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-12 11:18:18.991 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (2ms).
+2024-09-12 11:18:18.993 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (6ms).
+2024-09-12 11:18:18.998 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]"
+2024-09-12 11:18:19.034 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]"
+2024-09-12 11:18:19.053 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-12 11:18:19.067 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-12 11:18:19.067 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-12 11:18:19.070 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:18:19.076 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"YourDatabase"' on server '"tcp:localhost,1433"' is being disposed after spending 36ms reading results.
+2024-09-12 11:18:19.079 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:18:19.084 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"YourDatabase"' on server '"tcp:localhost,1433"' (5ms).
+2024-09-12 11:18:19.087 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1141.9267ms.
+2024-09-12 11:18:19.090 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-12 11:18:19.092 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-12 11:18:19.093 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-12 11:18:19.093 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-12 11:18:19.093 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-12 11:18:19.093 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-12 11:18:19.093 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[WorkLearnProject4.Data.Models.Customer, WorkLearnProject4.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-12 11:18:19.110 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)" in 1353.2596ms
+2024-09-12 11:18:19.110 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"'
+2024-09-12 11:18:19.111 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Customers" responded 200 in 1379.6307 ms
+2024-09-12 11:18:19.113 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-12 11:18:19.115 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:18:19.116 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (1ms).
+2024-09-12 11:18:19.116 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/api/Customers""" - 200 null "application/json; charset=utf-8" 1401.0528ms
+2024-09-12 11:19:57.412 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/api/Customers""" - null null
+2024-09-12 11:19:57.451 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '"/api/Customers"'
+2024-09-12 11:19:57.452 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"' with route pattern '"api/Customers"' is valid for the request path '"/api/Customers"'
+2024-09-12 11:19:57.452 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"'
+2024-09-12 11:19:57.453 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-12 11:19:57.453 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"'
+2024-09-12 11:19:57.454 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"GetCustomers\", controller = \"Customers\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[WorkLearnProject4.Data.Models.Customer] GetCustomers()" on controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API").
+2024-09-12 11:19:57.454 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-12 11:19:57.455 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-12 11:19:57.455 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-12 11:19:57.455 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-12 11:19:57.455 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-12 11:19:57.455 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-12 11:19:57.457 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-12 11:19:57.457 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-12 11:19:57.457 +03:00  INF [WorkLearnProject4.API.Controllers.CustomersController] Получаем список всех пользователей
+2024-09-12 11:19:57.473 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-12 11:19:57.474 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-12 11:19:57.474 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2024-09-12 11:19:57.475 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:19:57.476 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:19:57.476 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-12 11:19:57.476 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-12 11:19:57.477 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-12 11:19:57.477 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]"
+2024-09-12 11:19:57.491 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]"
+2024-09-12 11:19:57.492 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-12 11:19:57.492 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-12 11:19:57.492 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-12 11:19:57.492 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:19:57.492 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"YourDatabase"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-12 11:19:57.493 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:19:57.493 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"YourDatabase"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:19:57.493 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 35.5617ms.
+2024-09-12 11:19:57.493 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-12 11:19:57.494 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-12 11:19:57.494 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-12 11:19:57.494 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-12 11:19:57.494 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-12 11:19:57.494 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-12 11:19:57.494 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[WorkLearnProject4.Data.Models.Customer, WorkLearnProject4.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-12 11:19:57.495 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)" in 39.4363ms
+2024-09-12 11:19:57.495 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.CustomersController.GetCustomers (WorkLearnProject4.API)"'
+2024-09-12 11:19:57.495 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Customers" responded 200 in 41.4795 ms
+2024-09-12 11:19:57.495 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-12 11:19:57.495 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"YourDatabase"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:19:57.495 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).
+2024-09-12 11:19:57.496 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/api/Customers""" - 200 null "application/json; charset=utf-8" 113.4797ms
+2024-09-12 11:21:40.430 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6J0DNVPN7S"" accepted.
+2024-09-12 11:21:40.431 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6J0DNVPN7S"" started.
+2024-09-12 11:21:40.499 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6J0DNVPN7S" established using the following protocol: Tls12
+2024-09-12 11:21:40.576 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/favicon-32x32.png""" - null null
+2024-09-12 11:21:40.583 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/favicon-32x32.png"'
+2024-09-12 11:21:40.609 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-12 11:21:40.618 +03:00  INF [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2024-09-12 11:21:40.618 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 68.0896ms
+2024-09-12 11:22:26.378 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Config reload token fired. Checking for changes...
+2024-09-12 11:22:29.829 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Config reload token fired. Checking for changes...
+2024-09-12 11:22:29.912 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-12 11:22:30.126 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-12 11:22:30.364 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-12 11:22:38.125 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-12 11:22:38.346 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-12 11:22:38.354 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-12 11:22:38.364 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (8ms).
+2024-09-12 11:22:38.365 +03:00  DBG [Microsoft.EntityFrameworkCore.Migrations] Migrating using database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.367 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.516 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] An error occurred using the connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.516 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.517 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] An error occurred using the connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.533 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-12 11:22:38.533 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2024-09-12 11:22:38.533 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"master"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.555 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"master"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:38.557 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:38.560 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (1ms).
+2024-09-12 11:22:38.560 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (3ms).
+2024-09-12 11:22:38.563 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [workLearn];"
+2024-09-12 11:22:38.836 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("271"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [workLearn];"
+2024-09-12 11:22:38.836 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:38.836 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:38.837 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:38.837 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [workLearn] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+2024-09-12 11:22:38.998 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("161"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [workLearn] SET READ_COMMITTED_SNAPSHOT ON;
+END;"
+2024-09-12 11:22:38.999 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"master"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.002 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"master"' on server '"tcp:localhost,1433"' (2ms).
+2024-09-12 11:22:39.003 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"master"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.004 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).
+2024-09-12 11:22:39.004 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.019 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.019 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.019 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.019 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.020 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+2024-09-12 11:22:39.025 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+2024-09-12 11:22:39.026 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.026 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:22:39.051 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.051 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.051 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.051 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.052 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.052 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+2024-09-12 11:22:39.064 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+2024-09-12 11:22:39.064 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.064 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:22:39.064 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.065 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.065 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.065 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.065 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.065 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+2024-09-12 11:22:39.067 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+2024-09-12 11:22:39.067 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.067 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:22:39.068 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteScalar"'.
+2024-09-12 11:22:39.068 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteScalar"' (0ms).
+2024-09-12 11:22:39.069 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteScalar"' (0ms).
+2024-09-12 11:22:39.069 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.069 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.069 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+2024-09-12 11:22:39.078 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+2024-09-12 11:22:39.078 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.078 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:22:39.079 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.079 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.079 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-12 11:22:39.079 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-12 11:22:39.079 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-12 11:22:39.080 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2024-09-12 11:22:39.100 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2024-09-12 11:22:39.101 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.102 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-12 11:22:39.102 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.102 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:22:39.107 +03:00  INF [Microsoft.EntityFrameworkCore.Migrations] Applying migration '"20240912082230_Initial"'.
+2024-09-12 11:22:39.121 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] Executing 2 update commands as a batch.
+2024-09-12 11:22:39.125 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.125 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.127 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Beginning transaction with isolation level '"Unspecified"'.
+2024-09-12 11:22:39.133 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Began transaction with isolation level '"ReadCommitted"'.
+2024-09-12 11:22:39.134 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.134 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.134 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.135 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [BirthDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id])
+);"
+2024-09-12 11:22:39.142 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Customers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [BirthDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY ([Id])
+);"
+2024-09-12 11:22:39.143 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.143 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.143 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.143 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Weathers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [Temp] float NOT NULL,
+    [MinTemp] float NOT NULL,
+    [MaxTemp] float NOT NULL,
+    CONSTRAINT [PK_Weathers] PRIMARY KEY ([Id])
+);"
+2024-09-12 11:22:39.147 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Weathers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [Temp] float NOT NULL,
+    [MinTemp] float NOT NULL,
+    [MaxTemp] float NOT NULL,
+    CONSTRAINT [PK_Weathers] PRIMARY KEY ([Id])
+);"
+2024-09-12 11:22:39.147 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.147 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.147 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.147 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[Customers]'))
+    SET IDENTITY_INSERT [Customers] ON;
+INSERT INTO [Customers] ([Id], [BirthDate], [Email], [Name])
+VALUES ('05d14b86-ac19-4ea9-8103-b7ef5074913f', '1990-10-10T00:00:00.0000000', N'petr@example.com', N'Petr'),
+('a4b87eb1-ae4f-431a-93c1-88a719d35683', '2000-10-10T00:00:00.0000000', N'nick@example.com', N'Nick');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[Customers]'))
+    SET IDENTITY_INSERT [Customers] OFF;"
+2024-09-12 11:22:39.265 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("117"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[Customers]'))
+    SET IDENTITY_INSERT [Customers] ON;
+INSERT INTO [Customers] ([Id], [BirthDate], [Email], [Name])
+VALUES ('05d14b86-ac19-4ea9-8103-b7ef5074913f', '1990-10-10T00:00:00.0000000', N'petr@example.com', N'Petr'),
+('a4b87eb1-ae4f-431a-93c1-88a719d35683', '2000-10-10T00:00:00.0000000', N'nick@example.com', N'Nick');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirthDate', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[Customers]'))
+    SET IDENTITY_INSERT [Customers] OFF;"
+2024-09-12 11:22:39.265 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteNonQuery"'.
+2024-09-12 11:22:39.265 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.265 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteNonQuery"' (0ms).
+2024-09-12 11:22:39.266 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240912082230_Initial', N'8.0.8');"
+2024-09-12 11:22:39.270 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240912082230_Initial', N'8.0.8');"
+2024-09-12 11:22:39.270 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Committing transaction.
+2024-09-12 11:22:39.275 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Committed transaction.
+2024-09-12 11:22:39.275 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Disposing transaction.
+2024-09-12 11:22:39.275 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.275 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-12 11:22:39.276 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-12 11:22:39.276 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-12 11:22:39.276 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).

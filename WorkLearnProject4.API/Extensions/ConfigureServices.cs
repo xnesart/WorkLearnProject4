@@ -8,7 +8,7 @@ public static class ConfigureServices
     public static void ConfigureApiServices(this IServiceCollection services, ConfigurationManager configurationManager)
     {
         services.AddControllers();
-        services.AddScoped<IRepository<Customer>, CustomerRepository>();
+        services.AddScoped<ICustomerRepository, CustomerRepository>();
         services.AddScoped<IRepository<CurrentWeather>, WeatherRepository>();
         services.ConfigureDataBase(configurationManager);
     }
