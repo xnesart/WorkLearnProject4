@@ -9,7 +9,7 @@ public static class ConfigureServices
     {
         services.AddControllers();
         services.AddScoped<ICustomerRepository, CustomerRepository>();
-        services.AddScoped<IRepository<CurrentWeather>, WeatherRepository>();
+        services.AddScoped<IWeatherRepository, WeatherRepository>();
         services.ConfigureDataBase(configurationManager);
     }
 }

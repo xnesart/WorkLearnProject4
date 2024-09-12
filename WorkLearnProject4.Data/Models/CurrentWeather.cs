@@ -7,4 +7,5 @@ public class CurrentWeather
     public double Temp { get; set; }
     public double MinTemp { get; set; }
     public double MaxTemp { get; set; }
+    public DateTime Date { get; set; }
 }

@@ -7,7 +7,6 @@ public class CustomerRepository : ICustomerRepository
 {
     private LearnBdContext _context;
     private readonly Serilog.ILogger _logger = Log.ForContext<CustomerRepository>();
-    public IEnumerable<Customer> All { get; }
 
     public CustomerRepository(LearnBdContext context)
     {
@@ -36,7 +35,7 @@ public class CustomerRepository : ICustomerRepository
 
         if (foundCustomer == null)
         {
-            _logger.Information($"Error, Customer with this id {id} not found");
+            _logger.Error($"Error, Customer with this id {id} not found");
             
             throw new KeyNotFoundException($"customers with {id} not found");
         }
@@ -45,6 +44,7 @@ public class CustomerRepository : ICustomerRepository
         _context.SaveChanges();
     }
 
+    //TODO переделать, обновляемый пользователь не будет соответсовавть старому.
     public void Update(Customer entity)
     {
         _logger.Information($"Start updating customer with this parameters {entity} in repository method");
@@ -54,7 +54,7 @@ public class CustomerRepository : ICustomerRepository
 
         if (foundCustomer == null)
         {
-            _logger.Information($"Error, Customer with this id {entity.Id} not found");
+            _logger.Error($"Error, Customer with this id {entity.Id} not found");
             
             throw new KeyNotFoundException($"customers with {entity.Id} not found");
         }
@@ -74,7 +74,7 @@ public class CustomerRepository : ICustomerRepository
 
         if (existingEntity == null)
         {
-            _logger.Information($"Error, Customer not found");
+            _logger.Error($"Error, Customer not found");
             
             throw new ArgumentException("Customer not found.");
         }
@@ -99,7 +99,7 @@ public class CustomerRepository : ICustomerRepository
         var foundCustomer = _context.Customers.Find(id);
         if (foundCustomer == null)
         {
-            _logger.Information($"Error, customer with this id {id} is not found");
+            _logger.Error($"Error, customer with this id {id} is not found");
 
             throw new KeyNotFoundException($"customers with {id} not found");
         }
@@ -113,7 +113,7 @@ public class CustomerRepository : ICustomerRepository
 
         if (customers == null)
         {
-            _logger.Information($"Error, customers are not found");
+            _logger.Error($"Error, customers are not found");
 
             throw new KeyNotFoundException("customers are not found");
         }

@@ -46,7 +46,7 @@ public class CustomersController : Controller
     [HttpPut]
     public ActionResult<Customer> UpdateCustomer(Customer customer)
     {
-        _logger.Information($"Update customer with this parameters {customer}");
+        _logger.Information($"Put customer with this parameters {customer}");
 
         CustomersRepository.Update(customer);
 

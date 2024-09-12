@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using WorkLearnProject4.Data.Models;
 using WorkLearnProject4.Data.Repository;
 
@@ -8,40 +9,65 @@ namespace WorkLearnProject4.API.Controllers;
 [Route("api/[controller]")]
 public class WeatherController : Controller
 {
-    public IRepository<CurrentWeather> WeatherCtx { get; private set; }
+    public IWeatherRepository WeatherRepository { get; private set; }
+    private readonly Serilog.ILogger _logger = Log.ForContext<WeatherController>();
 
-    public WeatherController(IRepository<CurrentWeather> weatherCtx)
+    public WeatherController(IWeatherRepository weatherRepository)
     {
-        WeatherCtx = weatherCtx;
+        WeatherRepository = weatherRepository;
     }
 
     [HttpGet]
-    public IEnumerable<Customer> GetCurrentWeather()
+    public ActionResult<CurrentWeather> GetCurrentWeather()
     {
-        throw new NotImplementedException();
+        _logger.Information("Getting current weather");
+
+        return Ok(WeatherRepository.GetCurrentWeather());
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Customer> GetWeatherById(Guid id)
+    public ActionResult<CurrentWeather> GetWeatherById(Guid id)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Getting weather by {id}");
+
+        return Ok(WeatherRepository.GetById(id));
     }
 
     [HttpPost]
-    public ActionResult<Customer> AddWeather(Guid id)
+    public ActionResult AddWeather(CurrentWeather weather)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Adding weather with parameters {weather}");
+
+        WeatherRepository.Add(weather);
+        
+        return Ok();
     }
 
     [HttpPut]
-    public ActionResult<Customer> UpdateWeather(Guid id)
+    public ActionResult UpdateWeather(CurrentWeather weather)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Updating weather with parameters {weather}");
+
+        WeatherRepository.Put(weather);
+        return Ok();
+    }
+
+    [HttpPatch]
+    public ActionResult PatchWeather(CurrentWeather weather)
+    {
+        _logger.Information($"Patching weather with parameters {weather}");
+        WeatherRepository.Patch(weather);
+        
+        return Ok();
     }
 
     [HttpDelete]
-    public ActionResult<Customer> DeleteWeather(Guid id)
+    public ActionResult DeleteWeather(Guid id)
     {
-        throw new NotImplementedException();
+        _logger.Information($"Deleting weather with id {id}");
+
+        WeatherRepository.Delete(id);
+        
+        return Ok();
     }
 }
