@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkLearnProject4.Data;
 
@@ -11,9 +12,11 @@ using WorkLearnProject4.Data;
 namespace WorkLearnProject4.Data.Migrations
 {
     [DbContext(typeof(LearnBdContext))]
-    partial class LearnBdContextModelSnapshot : ModelSnapshot
+    [Migration("20240913062507_Orders")]
+    partial class Orders
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,14 +76,14 @@ namespace WorkLearnProject4.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("575d70c9-6689-41bd-b9f5-8914c92d0f83"),
+                            Id = new Guid("42badd52-5988-47fc-a099-ec374923bd7f"),
                             BirthDate = new DateTime(2000, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "nick@example.com",
                             Name = "Nick"
                         },
                         new
                         {
-                            Id = new Guid("b14328b9-18e8-40c9-9773-fdb555ccaea9"),
+                            Id = new Guid("95766c2e-25e8-4f61-a7bd-44c3ce457257"),
                             BirthDate = new DateTime(1990, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "petr@example.com",
                             Name = "Petr"

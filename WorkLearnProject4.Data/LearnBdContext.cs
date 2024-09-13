@@ -7,6 +7,7 @@ public class LearnBdContext : DbContext
 {
     public virtual DbSet<Customer> Customers { get; set; }
     public virtual DbSet<CurrentWeather> Weathers { get; set; }
+    public virtual DbSet<Order> Orders { get; set; }
 
     public LearnBdContext(DbContextOptions<LearnBdContext> options) : base(options)
     {

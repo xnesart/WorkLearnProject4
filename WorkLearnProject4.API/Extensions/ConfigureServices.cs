@@ -10,6 +10,7 @@ public static class ConfigureServices
         services.AddControllers();
         services.AddScoped<ICustomerRepository, CustomerRepository>();
         services.AddScoped<IWeatherRepository, WeatherRepository>();
+        services.AddScoped<IOrdersRepository, OrdersRepository>();
         services.ConfigureDataBase(configurationManager);
     }
 }
