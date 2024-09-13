@@ -6,7 +6,7 @@ public interface ICustomerRepository
 {
     void Add(Customer entity);
     void Delete(Guid id);
-    void Update(Customer entity);
+    void Update(Customer customer);
     Customer Patch(CustomerPatch customer);
     Customer GetById(Guid id);
     List<Customer> GetAllCustomers();

@@ -43,25 +43,22 @@ public class CustomerRepository : ICustomerRepository
         _context.Customers.Remove(foundCustomer);
         _context.SaveChanges();
     }
-
-    //TODO переделать, обновляемый пользователь не будет соответсовавть старому.
-    public void Update(Customer entity)
+    
+    public void Update(Customer customer)
     {
-        _logger.Information($"Start updating customer with this parameters {entity} in repository method");
+        _logger.Information($"Start updating customer with this parameters {customer} in repository method");
 
         var foundCustomer = _context.Customers
-            .FirstOrDefault(c => c.Name == entity.Name && c.BirthDate == entity.BirthDate && c.Email == entity.Email);
+            .FirstOrDefault(c => c.Id == customer.Id);
 
         if (foundCustomer == null)
         {
-            _logger.Error($"Error, Customer with this id {entity.Id} not found");
+            _logger.Error($"Error, Customer with this id {customer.Id} not found");
             
-            throw new KeyNotFoundException($"customers with {entity.Id} not found");
+            throw new KeyNotFoundException($"customers with {customer.Id} not found");
         }
 
-        foundCustomer.Name = entity.Name;
-        foundCustomer.BirthDate = entity.BirthDate;
-        foundCustomer.Email = entity.Email;
+        _context.Entry(foundCustomer).CurrentValues.SetValues(customer);
 
         _context.Customers.Update(foundCustomer);
         _context.SaveChanges();
