@@ -75,7 +75,7 @@ public class OrdersRepository : IOrdersRepository
         _context.SaveChanges();
     }
 
-    public void Patch(Order order)
+    public Order Patch(OrderPatch order)
     {
         _logger.Information($"Start patching order with this parameters {order} in repository method");
         var foundOrder = _context.Orders.Find(order.Id);
@@ -87,17 +87,21 @@ public class OrdersRepository : IOrdersRepository
             throw new ArgumentException("Order not found.");
         }
 
-        _context.Entry(foundOrder).CurrentValues.SetValues(order);
+        if (order.Date.HasValue) foundOrder.Date = order.Date.Value;
+        if (!string.IsNullOrEmpty(order.Name)) foundOrder.Name = order.Name;
+        if (order.CustomerId.HasValue) foundOrder.CustomerId = order.CustomerId.Value;
 
         foreach (var property in _context.Entry(foundOrder).Properties)
         {
             if (property.IsModified)
             {
-                Console.WriteLine($"Property {property.Metadata.Name} was modified.");
+                _logger.Information($"Property {property.Metadata.Name} was modified.");
             }
         }
 
         _context.SaveChanges();
+        
+        return foundOrder;
     }
 
     public Order GetById(Guid id)

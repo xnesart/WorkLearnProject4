@@ -67,21 +67,29 @@ public class CustomerRepository : ICustomerRepository
         _context.SaveChanges();
     }
 
-    public void Patch(Customer entity)
+    public Customer Patch(CustomerPatch customer)
     {
-        _logger.Information($"Start patching customer with this parameters {entity} in repository method");
-        var existingEntity = _context.Customers.Find(entity.Id);
+        _logger.Information($"Start patching customer with this parameters {customer} in repository method");
+        var existingCustomer = _context.Customers.Find(customer.Id);
 
-        if (existingEntity == null)
+        if (existingCustomer == null)
         {
             _logger.Error($"Error, Customer not found");
             
             throw new ArgumentException("Customer not found.");
         }
 
-        _context.Entry(existingEntity).CurrentValues.SetValues(entity);
+        _context.Entry(existingCustomer).CurrentValues.SetValues(customer);
         
-        foreach (var property in _context.Entry(existingEntity).Properties)
+        if (!string.IsNullOrEmpty(customer.Name))
+            existingCustomer.Name = customer.Name;
+        if (!string.IsNullOrEmpty(customer.Email))
+            existingCustomer.Email = customer.Email;
+        if (customer.BirthDate.HasValue)
+            existingCustomer.BirthDate = customer.BirthDate.Value;
+    
+        
+        foreach (var property in _context.Entry(existingCustomer).Properties)
         {
             if (property.IsModified)
             {
@@ -90,6 +98,8 @@ public class CustomerRepository : ICustomerRepository
         }
 
         _context.SaveChanges();
+
+        return existingCustomer;
     }
 
     public Customer GetById(Guid id)

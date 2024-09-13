@@ -3072,3 +3072,494 @@ WHERE [Id] = @p1;"
 2024-09-13 13:08:11.285 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
 2024-09-13 13:08:11.287 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (1ms).
 2024-09-13 13:08:11.287 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Address""" - 200 null "application/json; charset=utf-8" 1526.2216ms
+2024-09-13 13:15:48.126 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-13 13:15:48.237 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2024-09-13 13:15:51.863 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "https://localhost:7056"
+2024-09-13 13:15:51.863 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5174"
+2024-09-13 13:15:51.863 +03:00  DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly "WorkLearnProject4.API"
+2024-09-13 13:15:51.864 +03:00  INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2024-09-13 13:15:51.864 +03:00  INF [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2024-09-13 13:15:51.864 +03:00  INF [Microsoft.Hosting.Lifetime] Content root path: "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.API"
+2024-09-13 13:15:51.864 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2024-09-13 13:15:55.357 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRK6TPB3F"" accepted.
+2024-09-13 13:15:55.358 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRK6TPB3F"" started.
+2024-09-13 13:15:55.482 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6JRK6TPB3F" established using the following protocol: Tls12
+2024-09-13 13:15:55.521 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - null null
+2024-09-13 13:15:55.523 +03:00  DBG [Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware] Wildcard detected, all requests with hosts will be allowed.
+2024-09-13 13:15:55.539 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/index.html"'
+2024-09-13 13:15:55.540 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-13 13:15:55.618 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 99.315ms
+2024-09-13 13:15:56.238 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - null null
+2024-09-13 13:15:56.241 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2024-09-13 13:15:56.241 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-13 13:15:56.365 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 152.8826ms
+2024-09-13 13:16:00.564 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRK6TPB3F"" received FIN.
+2024-09-13 13:16:00.568 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6JRK6TPB3F" completed.
+2024-09-13 13:16:00.569 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6JRK6TPB3F"" is closed. The last processed stream ID was 3.
+2024-09-13 13:16:00.570 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRK6TPB3F"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-13 13:16:00.576 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRK6TPB3F"" stopped.
+2024-09-13 13:16:37.298 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRK6TPB3G"" accepted.
+2024-09-13 13:16:37.301 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRK6TPB3G"" started.
+2024-09-13 13:16:37.409 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6JRK6TPB3G" established using the following protocol: Tls12
+2024-09-13 13:16:37.511 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Weather""" - "application/json" 71
+2024-09-13 13:16:37.519 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '"/api/Weather"'
+2024-09-13 13:16:37.524 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)"' with route pattern '"api/Weather"' is valid for the request path '"/api/Weather"'
+2024-09-13 13:16:37.525 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)"'
+2024-09-13 13:16:37.529 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-13 13:16:37.534 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)"'
+2024-09-13 13:16:37.559 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"PatchWeather\", controller = \"Weather\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.CurrentWeather] PatchWeather(WorkLearnProject4.Data.Models.CurrentWeatherPatch)" on controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API").
+2024-09-13 13:16:37.561 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-13 13:16:37.561 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-13 13:16:37.561 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-13 13:16:37.561 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-13 13:16:37.561 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-13 13:16:37.564 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-13 13:16:37.717 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-13 13:16:37.733 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-13 13:16:37.736 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"weather"' of type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"' ...
+2024-09-13 13:16:37.738 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter '"weather"' of type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"' using the name '""' in request data ...
+2024-09-13 13:16:37.738 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2024-09-13 13:16:37.755 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRK6TPB3G"", Request id ""0HN6JRK6TPB3G:00000001"": started reading request body.
+2024-09-13 13:16:37.755 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRK6TPB3G"", Request id ""0HN6JRK6TPB3G:00000001"": done reading request body.
+2024-09-13 13:16:37.764 +03:00  DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"'
+2024-09-13 13:16:37.764 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter '"weather"' of type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"'.
+2024-09-13 13:16:37.765 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"weather"' of type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"'.
+2024-09-13 13:16:37.765 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"weather"' of type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"' ...
+2024-09-13 13:16:37.770 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"weather"' of type '"WorkLearnProject4.Data.Models.CurrentWeatherPatch"'.
+2024-09-13 13:16:37.776 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-13 13:16:37.776 +03:00  INF [WorkLearnProject4.API.Controllers.WeatherController] Patching weather with parameters WorkLearnProject4.Data.Models.CurrentWeatherPatch
+2024-09-13 13:16:37.779 +03:00  INF [WorkLearnProject4.Data.Repository.WeatherRepository] Start patching weather with this parameters WorkLearnProject4.Data.Models.CurrentWeatherPatch in repository method
+2024-09-13 13:16:38.424 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-13 13:16:38.496 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<CurrentWeather>()
+    .FirstOrDefault(e => object.Equals(
+        objA: EF.Property<object>(e, \"Id\"), 
+        objB: __get_Item_0))"'
+2024-09-13 13:16:38.689 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrentWeather>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CurrentWeather.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CurrentWeather.Date (DateTime) Required, 1], [Property: CurrentWeather.MaxTemp (double) Required, 2], [Property: CurrentWeather.MinTemp (double) Required, 3], [Property: CurrentWeather.Status (string) Required, 4], [Property: CurrentWeather.Temp (double) Required, 5] }
+        SELECT TOP(1) w.Id, w.Date, w.MaxTemp, w.MinTemp, w.Status, w.Temp
+        FROM Weathers AS w
+        WHERE w.Id == @__get_Item_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrentWeather>, 
+    WorkLearnProject4.Data.LearnBdContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()"'
+2024-09-13 13:16:38.715 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-13 13:16:38.736 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (19ms).
+2024-09-13 13:16:38.738 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.095 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.098 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:16:39.102 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (3ms).
+2024-09-13 13:16:39.114 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (16ms).
+2024-09-13 13:16:39.122 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__get_Item_0"
+2024-09-13 13:16:39.212 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("92"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__get_Item_0"
+2024-09-13 13:16:39.232 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"CurrentWeather"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:16:39.250 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.256 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 39ms reading results.
+2024-09-13 13:16:39.259 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.272 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (12ms).
+2024-09-13 13:16:39.273 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"LearnBdContext"'.
+2024-09-13 13:16:39.275 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"LearnBdContext"'.
+2024-09-13 13:16:39.288 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] The unchanged property '"CurrentWeather"."Status"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-09-13 13:16:39.294 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"CurrentWeather"' tracked by '"LearnBdContext"' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:16:39.295 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"LearnBdContext"'.
+2024-09-13 13:16:39.330 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.331 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.332 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:16:39.332 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:16:39.333 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:16:39.333 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@p1='?' (DbType = Guid), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Weathers] SET [Status] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;"
+2024-09-13 13:16:39.367 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("34"ms) [Parameters=["@p1='?' (DbType = Guid), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Weathers] SET [Status] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;"
+2024-09-13 13:16:39.369 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.369 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 2ms reading results.
+2024-09-13 13:16:39.370 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.370 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-13 13:16:39.379 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"CurrentWeather"' tracked by '"LearnBdContext"' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:16:39.380 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"LearnBdContext"' with 1 entities written to the database.
+2024-09-13 13:16:39.385 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1607.1742ms.
+2024-09-13 13:16:39.389 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-13 13:16:39.391 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-13 13:16:39.393 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-13 13:16:39.393 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-13 13:16:39.394 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-13 13:16:39.395 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-13 13:16:39.395 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "OkObjectResult", writing value of type '"WorkLearnProject4.Data.Models.CurrentWeather"'.
+2024-09-13 13:16:39.414 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)" in 1850.0064ms
+2024-09-13 13:16:39.414 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.WeatherController.PatchWeather (WorkLearnProject4.API)"'
+2024-09-13 13:16:39.415 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "PATCH" "/api/Weather" responded 200 in 1882.4870 ms
+2024-09-13 13:16:39.417 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-13 13:16:39.420 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:16:39.421 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (1ms).
+2024-09-13 13:16:39.422 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Weather""" - 200 null "application/json; charset=utf-8" 1986.2657ms
+2024-09-13 13:16:40.573 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRK6TPB3G"" received FIN.
+2024-09-13 13:16:40.575 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6JRK6TPB3G"" is closed. The last processed stream ID was 1.
+2024-09-13 13:16:40.576 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRK6TPB3G"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-13 13:16:40.577 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6JRK6TPB3G" completed.
+2024-09-13 13:16:40.578 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRK6TPB3G"" stopped.
+2024-09-13 13:33:57.447 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-13 13:33:57.557 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2024-09-13 13:34:01.161 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "https://localhost:7056"
+2024-09-13 13:34:01.162 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5174"
+2024-09-13 13:34:01.162 +03:00  DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly "WorkLearnProject4.API"
+2024-09-13 13:34:01.162 +03:00  INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2024-09-13 13:34:01.162 +03:00  INF [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2024-09-13 13:34:01.162 +03:00  INF [Microsoft.Hosting.Lifetime] Content root path: "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.API"
+2024-09-13 13:34:01.162 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2024-09-13 13:34:02.179 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH5"" accepted.
+2024-09-13 13:34:02.180 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH5"" started.
+2024-09-13 13:34:02.245 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6JRUAQHAH5" established using the following protocol: Tls12
+2024-09-13 13:34:02.293 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - null null
+2024-09-13 13:34:02.295 +03:00  DBG [Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware] Wildcard detected, all requests with hosts will be allowed.
+2024-09-13 13:34:02.315 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/index.html"'
+2024-09-13 13:34:02.315 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-13 13:34:02.397 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 107.3143ms
+2024-09-13 13:34:02.974 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - null null
+2024-09-13 13:34:02.977 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2024-09-13 13:34:02.978 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-13 13:34:03.132 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 157.8572ms
+2024-09-13 13:34:05.861 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH5"" received FIN.
+2024-09-13 13:34:05.864 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6JRUAQHAH5" completed.
+2024-09-13 13:34:05.865 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6JRUAQHAH5"" is closed. The last processed stream ID was 3.
+2024-09-13 13:34:05.867 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH5"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-13 13:34:05.873 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH5"" stopped.
+2024-09-13 13:34:24.780 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH6"" accepted.
+2024-09-13 13:34:24.782 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH6"" started.
+2024-09-13 13:34:24.844 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6JRUAQHAH6" established using the following protocol: Tls12
+2024-09-13 13:34:24.934 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Customers""" - "application/json" 158
+2024-09-13 13:34:24.938 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '"/api/Customers"'
+2024-09-13 13:34:24.942 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"' with route pattern '"api/Customers"' is valid for the request path '"/api/Customers"'
+2024-09-13 13:34:24.944 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:34:24.946 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-13 13:34:24.949 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:34:24.963 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"PatchCustomer\", controller = \"Customers\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.Customer] PatchCustomer(WorkLearnProject4.Data.Models.CustomerPatch)" on controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API").
+2024-09-13 13:34:24.963 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-13 13:34:24.964 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-13 13:34:24.964 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-13 13:34:24.964 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-13 13:34:24.964 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-13 13:34:24.965 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-13 13:34:25.104 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-13 13:34:25.121 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-13 13:34:25.124 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' ...
+2024-09-13 13:34:25.126 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' using the name '""' in request data ...
+2024-09-13 13:34:25.126 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2024-09-13 13:34:25.138 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRUAQHAH6"", Request id ""0HN6JRUAQHAH6:00000001"": started reading request body.
+2024-09-13 13:34:25.138 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRUAQHAH6"", Request id ""0HN6JRUAQHAH6:00000001"": done reading request body.
+2024-09-13 13:34:25.150 +03:00  DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type '"WorkLearnProject4.Data.Models.CustomerPatch"'
+2024-09-13 13:34:25.150 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:34:25.150 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:34:25.151 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' ...
+2024-09-13 13:34:25.157 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:34:25.164 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-13 13:34:25.164 +03:00  INF [WorkLearnProject4.API.Controllers.CustomersController] Patch customer with this parameters WorkLearnProject4.Data.Models.CustomerPatch
+2024-09-13 13:34:25.166 +03:00  INF [WorkLearnProject4.Data.Repository.CustomerRepository] Start patching customer with this parameters WorkLearnProject4.Data.Models.CustomerPatch in repository method
+2024-09-13 13:34:25.793 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-13 13:34:25.868 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Customer>()
+    .FirstOrDefault(e => object.Equals(
+        objA: EF.Property<object>(e, \"Id\"), 
+        objB: __get_Item_0))"'
+2024-09-13 13:34:26.056 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<Customer>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.BirthDate (DateTime) Required, 1], [Property: Customer.Email (string) Required, 2], [Property: Customer.Name (string) Required, 3] }
+        SELECT TOP(1) c.Id, c.BirthDate, c.Email, c.Name
+        FROM Customers AS c
+        WHERE c.Id == @__get_Item_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Customer>, 
+    WorkLearnProject4.Data.LearnBdContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()"'
+2024-09-13 13:34:26.084 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-13 13:34:26.104 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (19ms).
+2024-09-13 13:34:26.106 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.402 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.405 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:34:26.408 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (3ms).
+2024-09-13 13:34:26.416 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (11ms).
+2024-09-13 13:34:26.423 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+WHERE [c].[Id] = @__get_Item_0"
+2024-09-13 13:34:26.510 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("89"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+WHERE [c].[Id] = @__get_Item_0"
+2024-09-13 13:34:26.531 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:34:26.545 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.551 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 36ms reading results.
+2024-09-13 13:34:26.553 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.558 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (4ms).
+2024-09-13 13:34:26.578 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Customer"' tracked by '"LearnBdContext"' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:34:26.580 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"LearnBdContext"'.
+2024-09-13 13:34:26.582 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"LearnBdContext"'.
+2024-09-13 13:34:26.583 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"LearnBdContext"'.
+2024-09-13 13:34:26.615 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.616 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.617 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:34:26.617 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:34:26.618 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (1ms).
+2024-09-13 13:34:26.619 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@p3='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customers] SET [BirthDate] = @p0, [Email] = @p1, [Name] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;"
+2024-09-13 13:34:26.656 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("37"ms) [Parameters=["@p3='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customers] SET [BirthDate] = @p0, [Email] = @p1, [Name] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;"
+2024-09-13 13:34:26.658 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.658 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 1ms reading results.
+2024-09-13 13:34:26.658 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.658 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-13 13:34:26.661 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Customer"' tracked by '"LearnBdContext"' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:34:26.662 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"LearnBdContext"' with 1 entities written to the database.
+2024-09-13 13:34:26.664 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1498.0223ms.
+2024-09-13 13:34:26.666 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-13 13:34:26.667 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-13 13:34:26.667 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-13 13:34:26.668 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-13 13:34:26.668 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-13 13:34:26.668 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-13 13:34:26.668 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "OkObjectResult", writing value of type '"WorkLearnProject4.Data.Models.Customer"'.
+2024-09-13 13:34:26.678 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)" in 1712.2829ms
+2024-09-13 13:34:26.678 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:34:26.679 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "PATCH" "/api/Customers" responded 200 in 1730.6336 ms
+2024-09-13 13:34:26.681 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-13 13:34:26.683 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:26.685 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (1ms).
+2024-09-13 13:34:26.685 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Customers""" - 200 null "application/json; charset=utf-8" 1750.9075ms
+2024-09-13 13:34:30.850 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH6"" received FIN.
+2024-09-13 13:34:30.854 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6JRUAQHAH6"" is closed. The last processed stream ID was 1.
+2024-09-13 13:34:30.856 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH6"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-13 13:34:30.857 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6JRUAQHAH6" completed.
+2024-09-13 13:34:30.860 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH6"" stopped.
+2024-09-13 13:34:44.107 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH7"" accepted.
+2024-09-13 13:34:44.114 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH7"" started.
+2024-09-13 13:34:44.181 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6JRUAQHAH7" established using the following protocol: Tls12
+2024-09-13 13:34:44.262 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Customers""" - "application/json" 154
+2024-09-13 13:34:44.265 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '"/api/Customers"'
+2024-09-13 13:34:44.265 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"' with route pattern '"api/Customers"' is valid for the request path '"/api/Customers"'
+2024-09-13 13:34:44.266 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:34:44.268 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-13 13:34:44.268 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:34:44.269 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"PatchCustomer\", controller = \"Customers\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.Customer] PatchCustomer(WorkLearnProject4.Data.Models.CustomerPatch)" on controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API").
+2024-09-13 13:34:44.270 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-13 13:34:44.270 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-13 13:34:44.270 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-13 13:34:44.270 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-13 13:34:44.271 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-13 13:34:44.271 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-13 13:34:44.274 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-13 13:34:44.275 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' ...
+2024-09-13 13:34:44.275 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' using the name '""' in request data ...
+2024-09-13 13:34:44.275 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2024-09-13 13:34:44.276 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRUAQHAH7"", Request id ""0HN6JRUAQHAH7:00000001"": started reading request body.
+2024-09-13 13:34:44.276 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRUAQHAH7"", Request id ""0HN6JRUAQHAH7:00000001"": done reading request body.
+2024-09-13 13:34:44.277 +03:00  DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type '"WorkLearnProject4.Data.Models.CustomerPatch"'
+2024-09-13 13:34:44.277 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:34:44.277 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:34:44.277 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' ...
+2024-09-13 13:34:44.278 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:34:44.279 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-13 13:34:44.279 +03:00  INF [WorkLearnProject4.API.Controllers.CustomersController] Patch customer with this parameters WorkLearnProject4.Data.Models.CustomerPatch
+2024-09-13 13:34:44.279 +03:00  INF [WorkLearnProject4.Data.Repository.CustomerRepository] Start patching customer with this parameters WorkLearnProject4.Data.Models.CustomerPatch in repository method
+2024-09-13 13:34:44.305 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-13 13:34:44.310 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-13 13:34:44.310 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2024-09-13 13:34:44.311 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.311 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.312 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:34:44.312 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:34:44.312 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:34:44.312 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+WHERE [c].[Id] = @__get_Item_0"
+2024-09-13 13:34:44.336 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("24"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+WHERE [c].[Id] = @__get_Item_0"
+2024-09-13 13:34:44.337 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:34:44.338 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.338 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 1ms reading results.
+2024-09-13 13:34:44.338 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.339 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-13 13:34:44.340 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Customer"' tracked by '"LearnBdContext"' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:34:44.340 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"LearnBdContext"'.
+2024-09-13 13:34:44.340 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"LearnBdContext"'.
+2024-09-13 13:34:44.340 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"LearnBdContext"'.
+2024-09-13 13:34:44.341 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.341 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.341 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:34:44.341 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:34:44.341 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:34:44.342 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@p1='?' (DbType = Guid), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customers] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;"
+2024-09-13 13:34:44.369 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("27"ms) [Parameters=["@p1='?' (DbType = Guid), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customers] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;"
+2024-09-13 13:34:44.369 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.369 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-13 13:34:44.369 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.370 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-13 13:34:44.370 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Customer"' tracked by '"LearnBdContext"' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:34:44.370 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"LearnBdContext"' with 1 entities written to the database.
+2024-09-13 13:34:44.370 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 91.0558ms.
+2024-09-13 13:34:44.371 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-13 13:34:44.371 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-13 13:34:44.371 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-13 13:34:44.371 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-13 13:34:44.371 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-13 13:34:44.371 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-13 13:34:44.371 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "OkObjectResult", writing value of type '"WorkLearnProject4.Data.Models.Customer"'.
+2024-09-13 13:34:44.372 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)" in 101.0641ms
+2024-09-13 13:34:44.372 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:34:44.372 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "PATCH" "/api/Customers" responded 200 in 104.1038 ms
+2024-09-13 13:34:44.372 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-13 13:34:44.372 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:34:44.373 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).
+2024-09-13 13:34:44.373 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Customers""" - 200 null "application/json; charset=utf-8" 161.645ms
+2024-09-13 13:34:45.851 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH7"" received FIN.
+2024-09-13 13:34:45.852 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6JRUAQHAH7"" is closed. The last processed stream ID was 1.
+2024-09-13 13:34:45.852 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH7"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-13 13:34:45.852 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6JRUAQHAH7" completed.
+2024-09-13 13:34:45.853 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH7"" stopped.
+2024-09-13 13:36:04.851 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH8"" accepted.
+2024-09-13 13:36:04.857 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH8"" started.
+2024-09-13 13:36:04.931 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6JRUAQHAH8" established using the following protocol: Tls12
+2024-09-13 13:36:04.986 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Customers""" - "application/json" 155
+2024-09-13 13:36:04.991 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '"/api/Customers"'
+2024-09-13 13:36:04.991 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"' with route pattern '"api/Customers"' is valid for the request path '"/api/Customers"'
+2024-09-13 13:36:04.992 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:36:04.993 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-13 13:36:04.993 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:36:04.994 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"PatchCustomer\", controller = \"Customers\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.Customer] PatchCustomer(WorkLearnProject4.Data.Models.CustomerPatch)" on controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API").
+2024-09-13 13:36:04.996 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-13 13:36:04.996 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-13 13:36:04.997 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-13 13:36:04.997 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-13 13:36:04.998 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-13 13:36:04.998 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-13 13:36:05.001 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.CustomersController" ("WorkLearnProject4.API")
+2024-09-13 13:36:05.001 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' ...
+2024-09-13 13:36:05.001 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' using the name '""' in request data ...
+2024-09-13 13:36:05.001 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2024-09-13 13:36:05.002 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRUAQHAH8"", Request id ""0HN6JRUAQHAH8:00000001"": started reading request body.
+2024-09-13 13:36:05.002 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id ""0HN6JRUAQHAH8"", Request id ""0HN6JRUAQHAH8:00000001"": done reading request body.
+2024-09-13 13:36:05.002 +03:00  DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type '"WorkLearnProject4.Data.Models.CustomerPatch"'
+2024-09-13 13:36:05.003 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:36:05.003 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:36:05.003 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"' ...
+2024-09-13 13:36:05.003 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"customer"' of type '"WorkLearnProject4.Data.Models.CustomerPatch"'.
+2024-09-13 13:36:05.004 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-13 13:36:05.004 +03:00  INF [WorkLearnProject4.API.Controllers.CustomersController] Patch customer with this parameters WorkLearnProject4.Data.Models.CustomerPatch
+2024-09-13 13:36:05.004 +03:00  INF [WorkLearnProject4.Data.Repository.CustomerRepository] Start patching customer with this parameters WorkLearnProject4.Data.Models.CustomerPatch in repository method
+2024-09-13 13:36:05.026 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-13 13:36:05.028 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-13 13:36:05.029 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2024-09-13 13:36:05.029 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:36:05.029 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:36:05.030 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:36:05.030 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:36:05.030 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:36:05.031 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+WHERE [c].[Id] = @__get_Item_0"
+2024-09-13 13:36:05.066 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("35"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[BirthDate], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+WHERE [c].[Id] = @__get_Item_0"
+2024-09-13 13:36:05.067 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:36:05.067 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:36:05.067 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-13 13:36:05.067 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:36:05.068 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-13 13:36:05.068 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Customer"' tracked by '"LearnBdContext"' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:38:26.975 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"LearnBdContext"'.
+2024-09-13 13:38:27.051 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"LearnBdContext"'.
+2024-09-13 13:38:27.078 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"LearnBdContext"'.
+2024-09-13 13:38:27.081 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:38:27.082 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:38:27.082 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-13 13:38:27.082 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:38:27.082 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-13 13:38:27.082 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@p1='?' (DbType = Guid), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customers] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;"
+2024-09-13 13:38:27.125 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("43"ms) [Parameters=["@p1='?' (DbType = Guid), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Customers] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;"
+2024-09-13 13:38:27.126 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:38:27.126 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-13 13:38:27.126 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:38:27.126 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-13 13:38:27.127 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Customer"' tracked by '"LearnBdContext"' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-13 13:38:27.127 +03:00  DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"LearnBdContext"' with 1 entities written to the database.
+2024-09-13 13:38:27.127 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 142122.4325ms.
+2024-09-13 13:38:27.128 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-13 13:38:27.128 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-13 13:38:27.128 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-13 13:38:27.128 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-13 13:38:27.128 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-13 13:38:27.128 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-13 13:38:27.128 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "OkObjectResult", writing value of type '"WorkLearnProject4.Data.Models.Customer"'.
+2024-09-13 13:38:27.130 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)" in 142130.471ms
+2024-09-13 13:38:27.130 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.CustomersController.PatchCustomer (WorkLearnProject4.API)"'
+2024-09-13 13:38:27.130 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "PATCH" "/api/Customers" responded 200 in 142135.9083 ms
+2024-09-13 13:38:27.130 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-13 13:38:27.130 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-13 13:38:27.130 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).
+2024-09-13 13:38:27.131 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "PATCH" "https"://"localhost:7056""""/api/Customers""" - 200 null "application/json; charset=utf-8" 142170.4167ms
+2024-09-13 13:38:30.902 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH8"" received FIN.
+2024-09-13 13:38:30.902 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6JRUAQHAH8"" is closed. The last processed stream ID was 1.
+2024-09-13 13:38:30.903 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6JRUAQHAH8"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-13 13:38:30.903 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6JRUAQHAH8" completed.
+2024-09-13 13:38:30.904 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6JRUAQHAH8"" stopped.

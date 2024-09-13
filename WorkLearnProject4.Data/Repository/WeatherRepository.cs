@@ -51,24 +51,35 @@ public class WeatherRepository : IWeatherRepository
         _context.SaveChanges();
     }
 
-    public void Patch(CurrentWeather weather)
+    public CurrentWeather Patch(CurrentWeatherPatch weather)
     {
-        _logger.Information($"Patching weather in repository method with id {weather.Id}");
+        _logger.Information($"Start patching weather with this parameters {weather} in repository method");
 
-        var foundWeather = _context.Weathers.FirstOrDefault(w => w.Id == weather.Id);
-        if (foundWeather == null)
+        var existingWeather = _context.Weathers.Find(weather.Id);
+
+        if (existingWeather == null)
         {
-            _logger.Error($"Weather with id {weather.Id} not found");
-            throw new KeyNotFoundException($"Weather with id {weather.Id} not found");
+            _logger.Error($"Error, Weather with id {weather.Id} not found");
+            throw new ArgumentException($"Weather with id {weather.Id} not found.");
         }
 
-        if (weather.Date != default) foundWeather.Date = weather.Date;
-        if (weather.MaxTemp != default) foundWeather.MaxTemp = weather.MaxTemp;
-        if (weather.MinTemp != default) foundWeather.MinTemp = weather.MinTemp;
-        if (weather.Temp != default) foundWeather.Temp = weather.Temp;
-        if (!string.IsNullOrEmpty(weather.Status)) foundWeather.Status = weather.Status;
+        if (weather.Status != null) existingWeather.Status = weather.Status;
+        if (weather.Temp.HasValue) existingWeather.Temp = weather.Temp.Value;
+        if (weather.MinTemp.HasValue) existingWeather.MinTemp = weather.MinTemp.Value;
+        if (weather.MaxTemp.HasValue) existingWeather.MaxTemp = weather.MaxTemp.Value;
+        if (weather.Date.HasValue) existingWeather.Date = weather.Date.Value;
 
         _context.SaveChanges();
+
+        foreach (var property in _context.Entry(existingWeather).Properties)
+        {
+            if (property.IsModified)
+            {
+                _logger.Information($"Property {property.Metadata.Name} was modified.");
+            }
+        }
+
+        return existingWeather;
     }
 
     public CurrentWeather GetById(Guid id)

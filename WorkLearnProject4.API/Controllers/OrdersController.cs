@@ -30,7 +30,7 @@ public class OrdersController : Controller
     public ActionResult<Customer> GetOrderById(Guid id)
     {
         _logger.Information($"Getting order by id {id}");
-        
+
         return Ok(OrdersRepository.GetById(id));
     }
 
@@ -40,7 +40,7 @@ public class OrdersController : Controller
         _logger.Information($"Create order with this parameters {order}");
 
         OrdersRepository.Add(order);
-        
+
         return Ok();
     }
 
@@ -55,13 +55,12 @@ public class OrdersController : Controller
     }
 
     [HttpPatch]
-    public ActionResult<Order> PatchOrder(Order order)
+    public ActionResult<Order> PatchOrder(OrderPatch order)
     {
         _logger.Information($"Patch customer with this parameters {order}");
 
-        OrdersRepository.Patch(order);
-        
-        return Ok();
+        return Ok(OrdersRepository.Patch(order)
+        );
     }
 
     [HttpDelete]

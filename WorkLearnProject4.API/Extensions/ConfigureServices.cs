@@ -1,5 +1,4 @@
-﻿using WorkLearnProject4.Data.Models;
-using WorkLearnProject4.Data.Repository;
+﻿using WorkLearnProject4.Data.Repository;
 
 namespace WorkLearnProject4.API.Extensions;
 

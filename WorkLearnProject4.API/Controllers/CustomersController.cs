@@ -29,7 +29,7 @@ public class CustomersController : Controller
     public ActionResult<Customer> GetCustomerById(Guid id)
     {
         _logger.Information($"Getting user by id {id}");
-        
+
         return Ok(CustomersRepository.GetById(id));
     }
 
@@ -39,7 +39,7 @@ public class CustomersController : Controller
         _logger.Information($"Create customer with this parameters {customer}");
 
         CustomersRepository.Add(customer);
-        
+
         return Ok();
     }
 
@@ -54,13 +54,11 @@ public class CustomersController : Controller
     }
 
     [HttpPatch]
-    public ActionResult<Customer> PatchCustomer(Customer customer)
+    public ActionResult<Customer> PatchCustomer(CustomerPatch customer)
     {
         _logger.Information($"Patch customer with this parameters {customer}");
-
-        CustomersRepository.Patch(customer);
         
-        return Ok();
+        return Ok(CustomersRepository.Patch(customer));
     }
 
     [HttpDelete]

@@ -39,7 +39,7 @@ public class WeatherController : Controller
         _logger.Information($"Adding weather with parameters {weather}");
 
         WeatherRepository.Add(weather);
-        
+
         return Ok();
     }
 
@@ -53,12 +53,11 @@ public class WeatherController : Controller
     }
 
     [HttpPatch]
-    public ActionResult PatchWeather(CurrentWeather weather)
+    public ActionResult<CurrentWeather> PatchWeather(CurrentWeatherPatch weather)
     {
         _logger.Information($"Patching weather with parameters {weather}");
-        WeatherRepository.Patch(weather);
-        
-        return Ok();
+
+        return Ok(WeatherRepository.Patch(weather));
     }
 
     [HttpDelete]
@@ -67,7 +66,7 @@ public class WeatherController : Controller
         _logger.Information($"Deleting weather with id {id}");
 
         WeatherRepository.Delete(id);
-        
+
         return Ok();
     }
 }
