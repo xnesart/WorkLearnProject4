@@ -11,6 +11,7 @@ public static class ConfigureServices
         services.AddScoped<ICustomerRepository, CustomerRepository>();
         services.AddScoped<IWeatherRepository, WeatherRepository>();
         services.AddScoped<IOrdersRepository, OrdersRepository>();
+        services.AddScoped<IAddressRepository, AddressRepository>();
         services.ConfigureDataBase(configurationManager);
     }
 }
