@@ -52,7 +52,6 @@ public class OrdersRepository : IOrdersRepository
         _context.SaveChanges();
     }
 
-    //TODO переделать, обновляемый пользователь не будет соответсовавть старому.
     public void Update(Order order)
     {
         _logger.Information($"Start updating order with this parameters {order} in repository method");
@@ -67,9 +66,7 @@ public class OrdersRepository : IOrdersRepository
             throw new KeyNotFoundException($"Order with {order.Id} not found");
         }
 
-        foundOrder.Name = order.Name;
-        foundOrder.Date = order.Date;
-        foundOrder.Customer = order.Customer;
+        _context.Entry(foundOrder).CurrentValues.SetValues(order);
 
         _context.Orders.Update(foundOrder);
         _context.SaveChanges();
