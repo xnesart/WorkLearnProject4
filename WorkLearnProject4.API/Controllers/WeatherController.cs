@@ -47,6 +47,22 @@ public class WeatherController : Controller
 
         return Ok(WeatherRepository.GetById(id));
     }
+    
+    /// <summary>
+    /// Get weather by id from query
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns> Weather by id
+    ///<response code = "200">Returns the weather with current id</response>
+    ///<response code = "404">Weather with this id not found</response>
+    /// </returns>
+    [HttpGet("search")]
+    public ActionResult<CurrentWeather> GetWeatherByQuery([FromQuery] Guid id)
+    {
+        _logger.Information($"Getting weather from query by {id}");
+
+        return Ok(WeatherRepository.GetById(id));
+    }
 
     /// <summary>
     /// Post new weather

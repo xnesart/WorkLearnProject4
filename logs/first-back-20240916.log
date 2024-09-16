@@ -1036,3 +1036,273 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5);"
 2024-09-16 17:09:00.151 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6MB4D33S9R"" is closed. The last processed stream ID was 3.
 2024-09-16 17:09:00.152 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MB4D33S9R"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
 2024-09-16 17:09:00.160 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MB4D33S9R"" stopped.
+2024-09-16 17:39:01.555 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-16 17:39:01.670 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2024-09-16 17:39:02.280 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "https://localhost:7056"
+2024-09-16 17:39:02.280 +03:00  INF [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5174"
+2024-09-16 17:39:02.280 +03:00  DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly "WorkLearnProject4.API"
+2024-09-16 17:39:02.280 +03:00  INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2024-09-16 17:39:02.280 +03:00  INF [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2024-09-16 17:39:02.280 +03:00  INF [Microsoft.Hosting.Lifetime] Content root path: "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.API"
+2024-09-16 17:39:02.280 +03:00  DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2024-09-16 17:39:05.510 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G7"" accepted.
+2024-09-16 17:39:05.511 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G7"" started.
+2024-09-16 17:39:05.602 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6MBL8C84G7" established using the following protocol: Tls12
+2024-09-16 17:39:05.644 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - null null
+2024-09-16 17:39:05.646 +03:00  DBG [Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware] Wildcard detected, all requests with hosts will be allowed.
+2024-09-16 17:39:05.663 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/index.html"'
+2024-09-16 17:39:05.663 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-16 17:39:05.776 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 135.3923ms
+2024-09-16 17:39:06.383 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - null null
+2024-09-16 17:39:06.383 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2024-09-16 17:39:06.383 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+2024-09-16 17:39:06.487 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 104.6611ms
+2024-09-16 17:39:09.248 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84G7"" received FIN.
+2024-09-16 17:39:09.252 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6MBL8C84G7" completed.
+2024-09-16 17:39:09.255 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6MBL8C84G7"" is closed. The last processed stream ID was 3.
+2024-09-16 17:39:09.256 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84G7"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-16 17:39:09.264 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G7"" stopped.
+2024-09-16 17:39:21.971 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G8"" accepted.
+2024-09-16 17:39:21.977 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G8"" started.
+2024-09-16 17:39:22.045 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6MBL8C84G8" established using the following protocol: Tls12
+2024-09-16 17:39:22.101 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/api/Weather/search""?id=01AC8585-107A-4154-8589-C4F82B795027" - null null
+2024-09-16 17:39:22.115 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 2 candidate(s) found for the request path '"/api/Weather/search"'
+2024-09-16 17:39:22.119 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"' with route pattern '"api/Weather/search"' is valid for the request path '"/api/Weather/search"'
+2024-09-16 17:39:22.119 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherById (WorkLearnProject4.API)"' with route pattern '"api/Weather/{id}"' is valid for the request path '"/api/Weather/search"'
+2024-09-16 17:39:22.120 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:22.124 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-16 17:39:22.127 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:22.150 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"GetWeatherByQuery\", controller = \"Weather\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.CurrentWeather] GetWeatherByQuery(System.Guid)" on controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API").
+2024-09-16 17:39:22.151 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-16 17:39:22.151 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-16 17:39:22.152 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-16 17:39:22.152 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-16 17:39:22.152 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-16 17:39:22.154 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-16 17:39:22.287 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-16 17:39:22.317 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-16 17:39:22.322 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+2024-09-16 17:39:22.323 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+2024-09-16 17:39:22.326 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:22.326 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:22.326 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+2024-09-16 17:39:22.328 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:22.333 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-16 17:39:22.334 +03:00  INF [WorkLearnProject4.API.Controllers.WeatherController] Getting weather from query by 01ac8585-107a-4154-8589-c4f82b795027
+2024-09-16 17:39:22.405 +03:00  INF [WorkLearnProject4.Data.Repository.WeatherRepository] Getting weather by id 01ac8585-107a-4154-8589-c4f82b795027 in repository method
+2024-09-16 17:39:23.050 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-16 17:39:23.096 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<CurrentWeather>()
+    .FirstOrDefault(e => e.Id == __id_0)"'
+2024-09-16 17:39:23.267 +03:00  DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrentWeather>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CurrentWeather.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CurrentWeather.Date (DateTime) Required, 1], [Property: CurrentWeather.MaxTemp (double) Required, 2], [Property: CurrentWeather.MinTemp (double) Required, 3], [Property: CurrentWeather.Status (string) Required, 4], [Property: CurrentWeather.Temp (double) Required, 5] }
+        SELECT TOP(1) w.Id, w.Date, w.MaxTemp, w.MinTemp, w.Status, w.Temp
+        FROM Weathers AS w
+        WHERE w.Id == @__id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrentWeather>, 
+    WorkLearnProject4.Data.LearnBdContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()"'
+2024-09-16 17:39:23.296 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-16 17:39:23.318 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (21ms).
+2024-09-16 17:39:23.320 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:23.615 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:23.618 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-16 17:39:23.621 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (3ms).
+2024-09-16 17:39:23.630 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (11ms).
+2024-09-16 17:39:23.636 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__id_0"
+2024-09-16 17:39:23.719 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("85"ms) [Parameters=["@__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__id_0"
+2024-09-16 17:39:23.737 +03:00  DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"LearnBdContext"' started tracking '"CurrentWeather"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-16 17:39:23.758 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:23.766 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 41ms reading results.
+2024-09-16 17:39:23.768 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:23.773 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (5ms).
+2024-09-16 17:39:23.776 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action method "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1440.8319ms.
+2024-09-16 17:39:23.778 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-16 17:39:23.780 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-09-16 17:39:23.780 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-09-16 17:39:23.780 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-16 17:39:23.780 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-16 17:39:23.781 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2024-09-16 17:39:23.781 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing "OkObjectResult", writing value of type '"WorkLearnProject4.Data.Models.CurrentWeather"'.
+2024-09-16 17:39:23.799 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)" in 1644.528ms
+2024-09-16 17:39:23.799 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:23.800 +03:00  INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Weather/search" responded 200 in 1673.5388 ms
+2024-09-16 17:39:23.801 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-16 17:39:23.804 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:23.805 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (1ms).
+2024-09-16 17:39:23.805 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/api/Weather/search""?id=01AC8585-107A-4154-8589-C4F82B795027" - 200 null "application/json; charset=utf-8" 1728.9959ms
+2024-09-16 17:39:24.257 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84G8"" received FIN.
+2024-09-16 17:39:24.258 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6MBL8C84G8"" is closed. The last processed stream ID was 1.
+2024-09-16 17:39:24.258 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6MBL8C84G8" completed.
+2024-09-16 17:39:24.259 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84G8"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-16 17:39:24.260 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G8"" stopped.
+2024-09-16 17:39:30.959 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G9"" accepted.
+2024-09-16 17:39:30.963 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G9"" started.
+2024-09-16 17:39:31.136 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6MBL8C84G9" established using the following protocol: Tls12
+2024-09-16 17:39:31.237 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/api/Weather/search""?id=01AC8585-107A-4154-8589-C4F82B795022" - null null
+2024-09-16 17:39:31.239 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 2 candidate(s) found for the request path '"/api/Weather/search"'
+2024-09-16 17:39:31.239 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"' with route pattern '"api/Weather/search"' is valid for the request path '"/api/Weather/search"'
+2024-09-16 17:39:31.239 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherById (WorkLearnProject4.API)"' with route pattern '"api/Weather/{id}"' is valid for the request path '"/api/Weather/search"'
+2024-09-16 17:39:31.240 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:31.241 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-16 17:39:31.241 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:31.242 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"GetWeatherByQuery\", controller = \"Weather\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.CurrentWeather] GetWeatherByQuery(System.Guid)" on controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API").
+2024-09-16 17:39:31.242 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-16 17:39:31.243 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-16 17:39:31.243 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-16 17:39:31.243 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-16 17:39:31.243 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-16 17:39:31.243 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-16 17:39:31.246 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-16 17:39:31.247 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+2024-09-16 17:39:31.247 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '"id"' in request data ...
+2024-09-16 17:39:31.247 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:31.248 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:31.248 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+2024-09-16 17:39:31.248 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:31.248 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-16 17:39:31.248 +03:00  INF [WorkLearnProject4.API.Controllers.WeatherController] Getting weather from query by 01ac8585-107a-4154-8589-c4f82b795022
+2024-09-16 17:39:31.249 +03:00  INF [WorkLearnProject4.Data.Repository.WeatherRepository] Getting weather by id 01ac8585-107a-4154-8589-c4f82b795022 in repository method
+2024-09-16 17:39:31.261 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-16 17:39:31.264 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-16 17:39:31.265 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2024-09-16 17:39:31.265 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:31.266 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:31.266 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-16 17:39:31.267 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-16 17:39:31.267 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-16 17:39:31.267 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__id_0"
+2024-09-16 17:39:31.284 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("18"ms) [Parameters=["@__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__id_0"
+2024-09-16 17:39:31.285 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:31.285 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-16 17:39:31.287 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:31.287 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-16 17:39:31.288 +03:00  ERR [WorkLearnProject4.Data.Repository.WeatherRepository] Error, weather by id 01ac8585-107a-4154-8589-c4f82b795022 not found
+2024-09-16 17:39:35.117 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)" in 3873.0629ms
+2024-09-16 17:39:35.118 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:35.118 +03:00  ERR [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Weather/search" responded 500 in 3877.0122 msWorkLearnProject4.Core.Exceptions.NotFoundException: Error, weather with id 01ac8585-107a-4154-8589-c4f82b795022 not found
+   at WorkLearnProject4.Data.Repository.WeatherRepository.GetById(Guid id) in /Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Data/Repository/WeatherRepository.cs:line 104
+   at WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery(Guid id) in /Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.API/Controllers/WeatherController.cs:line 64
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2024-09-16 17:39:35.168 +03:00  ERR [WorkLearnProject4.API.Configuration.ExceptionMiddleware] Ошибка Error, weather with id 01ac8585-107a-4154-8589-c4f82b795022 not found
+2024-09-16 17:39:35.171 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-16 17:39:35.172 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:35.172 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).
+2024-09-16 17:39:35.172 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/api/Weather/search""?id=01AC8585-107A-4154-8589-C4F82B795022" - 404 null "application/json" 3987.7867ms
+2024-09-16 17:39:39.251 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84G9"" received FIN.
+2024-09-16 17:39:39.253 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6MBL8C84G9"" is closed. The last processed stream ID was 1.
+2024-09-16 17:39:39.253 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84G9"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-16 17:39:39.254 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6MBL8C84G9" completed.
+2024-09-16 17:39:39.254 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84G9"" stopped.
+2024-09-16 17:39:46.928 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84GA"" accepted.
+2024-09-16 17:39:46.931 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84GA"" started.
+2024-09-16 17:39:46.977 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware] Connection "0HN6MBL8C84GA" established using the following protocol: Tls12
+2024-09-16 17:39:47.000 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting "HTTP/2" "GET" "https"://"localhost:7056""""/api/Weather/search""" - null null
+2024-09-16 17:39:47.001 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 2 candidate(s) found for the request path '"/api/Weather/search"'
+2024-09-16 17:39:47.001 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"' with route pattern '"api/Weather/search"' is valid for the request path '"/api/Weather/search"'
+2024-09-16 17:39:47.001 +03:00  DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherById (WorkLearnProject4.API)"' with route pattern '"api/Weather/{id}"' is valid for the request path '"/api/Weather/search"'
+2024-09-16 17:39:47.002 +03:00  DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:47.003 +03:00  DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+2024-09-16 17:39:47.003 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:47.003 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"GetWeatherByQuery\", controller = \"Weather\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[WorkLearnProject4.Data.Models.CurrentWeather] GetWeatherByQuery(System.Guid)" on controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API").
+2024-09-16 17:39:47.004 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "authorization" filters (in the following order): ["None"]
+2024-09-16 17:39:47.004 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "resource" filters (in the following order): ["None"]
+2024-09-16 17:39:47.004 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-16 17:39:47.004 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "exception" filters (in the following order): ["None"]
+2024-09-16 17:39:47.005 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-16 17:39:47.005 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-16 17:39:47.009 +03:00  DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller "WorkLearnProject4.API.Controllers.WeatherController" ("WorkLearnProject4.API")
+2024-09-16 17:39:47.010 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter '"id"' of type '"System.Guid"' ...
+2024-09-16 17:39:47.010 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Attempting to bind parameter '"id"' of type '"System.Guid"' using the name '""' in request data ...
+2024-09-16 17:39:47.010 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Could not find a value in the request with name '""' for binding parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:47.011 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:47.011 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:47.011 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter '"id"' of type '"System.Guid"' ...
+2024-09-16 17:39:47.011 +03:00  DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter '"id"' of type '"System.Guid"'.
+2024-09-16 17:39:47.011 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing action method "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)" - Validation state: Valid
+2024-09-16 17:39:47.012 +03:00  INF [WorkLearnProject4.API.Controllers.WeatherController] Getting weather from query by 00000000-0000-0000-0000-000000000000
+2024-09-16 17:39:47.012 +03:00  INF [WorkLearnProject4.Data.Repository.WeatherRepository] Getting weather by id 00000000-0000-0000-0000-000000000000 in repository method
+2024-09-16 17:39:47.033 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.8" initialized '"LearnBdContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"8.0.8"' with options: "None"
+2024-09-16 17:39:47.034 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2024-09-16 17:39:47.034 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2024-09-16 17:39:47.034 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:47.035 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:47.035 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for '"ExecuteReader"'.
+2024-09-16 17:39:47.035 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for '"ExecuteReader"' (0ms).
+2024-09-16 17:39:47.035 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2024-09-16 17:39:47.035 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=["@__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__id_0"
+2024-09-16 17:39:47.083 +03:00  INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("48"ms) [Parameters=["@__id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [w].[Id], [w].[Date], [w].[MaxTemp], [w].[MinTemp], [w].[Status], [w].[Temp]
+FROM [Weathers] AS [w]
+WHERE [w].[Id] = @__id_0"
+2024-09-16 17:39:47.084 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:47.084 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for '"workLearn"' on server '"tcp:localhost,1433"' is being disposed after spending 0ms reading results.
+2024-09-16 17:39:47.084 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:47.084 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"workLearn"' on server '"tcp:localhost,1433"' (0ms).
+2024-09-16 17:39:47.084 +03:00  ERR [WorkLearnProject4.Data.Repository.WeatherRepository] Error, weather by id 00000000-0000-0000-0000-000000000000 not found
+2024-09-16 17:39:49.667 +03:00  INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)" in 2662.589ms
+2024-09-16 17:39:49.668 +03:00  INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery (WorkLearnProject4.API)"'
+2024-09-16 17:39:49.668 +03:00  ERR [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Weather/search" responded 500 in 2664.9698 msWorkLearnProject4.Core.Exceptions.NotFoundException: Error, weather with id 00000000-0000-0000-0000-000000000000 not found
+   at WorkLearnProject4.Data.Repository.WeatherRepository.GetById(Guid id) in /Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Data/Repository/WeatherRepository.cs:line 104
+   at WorkLearnProject4.API.Controllers.WeatherController.GetWeatherByQuery(Guid id) in /Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.API/Controllers/WeatherController.cs:line 64
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+
+2024-09-16 17:39:49.708 +03:00  ERR [WorkLearnProject4.API.Configuration.ExceptionMiddleware] Ошибка Error, weather with id 00000000-0000-0000-0000-000000000000 not found
+2024-09-16 17:39:49.709 +03:00  DBG [Microsoft.EntityFrameworkCore.Infrastructure] '"LearnBdContext"' disposed.
+2024-09-16 17:39:49.709 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"workLearn"' on server '"tcp:localhost,1433"'.
+2024-09-16 17:39:49.709 +03:00  DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '""' on server '""' (0ms).
+2024-09-16 17:39:49.709 +03:00  INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished "HTTP/2" "GET" "https"://"localhost:7056""""/api/Weather/search""" - 404 null "application/json" 2730.4139ms
+2024-09-16 17:39:54.251 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84GA"" received FIN.
+2024-09-16 17:39:54.252 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] Connection id ""0HN6MBL8C84GA"" is closed. The last processed stream ID was 1.
+2024-09-16 17:39:54.253 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id ""0HN6MBL8C84GA"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2024-09-16 17:39:54.253 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Http2] The connection queue processing loop for "0HN6MBL8C84GA" completed.
+2024-09-16 17:39:54.253 +03:00  DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id ""0HN6MBL8C84GA"" stopped.
