@@ -46,6 +46,19 @@
           }
         }
       },
+      "FluentValidation/11.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1727,6 +1740,19 @@
             "rid": "win"
           }
         }
+      },
+      "WorkLearnProject4.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.10.0"
+        },
+        "compile": {
+          "bin/placeholder/WorkLearnProject4.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WorkLearnProject4.Core.dll": {}
+        }
       }
     }
   },
@@ -1771,6 +1797,31 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "FluentValidation/11.10.0": {
+      "sha512": "qsJGSJDdZ8qiG+lVJ70PZfJHcEdq8UQZ/tZDXoj78/iHKG6lVKtMJsD11zyyv/IPc7rwqGqnFoFLTNzpo3IPYg==",
+      "type": "package",
+      "path": "fluentvalidation/11.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.10.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -4639,17 +4690,24 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WorkLearnProject4.Core/1.0.0": {
+      "type": "project",
+      "path": "../WorkLearnProject4.Core/WorkLearnProject4.Core.csproj",
+      "msbuildProject": "../WorkLearnProject4.Core/WorkLearnProject4.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "FluentValidation >= 11.10.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Serilog >= 4.0.1",
       "Serilog.AspNetCore >= 8.0.2",
       "Serilog.Settings.Configuration >= 8.0.2",
       "Serilog.Sinks.Console >= 6.0.0",
-      "Serilog.Sinks.File >= 6.0.0"
+      "Serilog.Sinks.File >= 6.0.0",
+      "WorkLearnProject4.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4677,7 +4735,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/WorkLearnProject4.Core.csproj": {
+              "projectPath": "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/WorkLearnProject4.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4690,6 +4752,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.10.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

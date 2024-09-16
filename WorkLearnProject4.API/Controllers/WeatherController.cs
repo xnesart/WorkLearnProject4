@@ -17,6 +17,13 @@ public class WeatherController : Controller
         WeatherRepository = weatherRepository;
     }
 
+    /// <summary>
+    /// Getting current weather
+    /// </summary>
+    /// <returns>Last added weather
+    ///<response code = "200">Returns the last added weather</response>
+    ///<response code = "404"> is not found</response>
+    /// </returns>
     [HttpGet]
     public ActionResult<CurrentWeather> GetCurrentWeather()
     {
@@ -25,6 +32,14 @@ public class WeatherController : Controller
         return Ok(WeatherRepository.GetCurrentWeather());
     }
 
+    /// <summary>
+    /// Getting weather by id
+    /// </summary>
+    /// <param name="id">Weather id</param>
+    /// <returns>Weather by id
+    ///<response code = "200">Returns the weather with current id</response>
+    ///<response code = "404">Weather with this id not found</response>
+    /// </returns>
     [HttpGet("{id}")]
     public ActionResult<CurrentWeather> GetWeatherById(Guid id)
     {
@@ -33,6 +48,14 @@ public class WeatherController : Controller
         return Ok(WeatherRepository.GetById(id));
     }
 
+    /// <summary>
+    /// Post new weather
+    /// </summary>
+    /// <param name="weather"></param>
+    /// <returns>StatusCode success
+    ///<response code = "200">Returns Ok</response>
+    ///<response code = "404">Weather with this id not found</response>
+    /// </returns>
     [HttpPost]
     public ActionResult AddWeather(CurrentWeather weather)
     {

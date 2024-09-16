@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.10.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
           <PrivateAssets>all</PrivateAssets>
@@ -19,6 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\WorkLearnProject4.Core\WorkLearnProject4.Core.csproj" />
       <ProjectReference Include="..\WorkLearnProject4.Data\WorkLearnProject4.Data.csproj" />
     </ItemGroup>
 

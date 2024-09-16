@@ -1,5 +1,8 @@
+using FluentValidation;
 using Serilog;
+using WorkLearnProject4.Core.Exceptions;
 using WorkLearnProject4.Data.Models;
+using WorkLearnProject4.Data.Validation;
 
 namespace WorkLearnProject4.Data.Repository;
 
@@ -7,14 +10,23 @@ public class WeatherRepository : IWeatherRepository
 {
     private LearnBdContext _context;
     private readonly ILogger _logger = Log.ForContext<WeatherRepository>();
+    private readonly IValidator<CurrentWeather> _validator;
 
-    public WeatherRepository(LearnBdContext context)
+    public WeatherRepository(LearnBdContext context,IValidator<CurrentWeather> validator)
     {
         _context = context;
+        _validator = validator;
     }
 
     public void Add(CurrentWeather weather)
     {
+        var validationResult = _validator.Validate(weather);
+        if (!validationResult.IsValid)
+        {
+            var errorMessages = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
+            throw new CustomValidationException($"Validation failed: {errorMessages}");
+        }
+        
         weather.Id = Guid.NewGuid();
         _logger.Information($"Adding weather with parameters {weather} in repository method");
         _context.Weathers.Add(weather);
@@ -90,6 +102,8 @@ public class WeatherRepository : IWeatherRepository
         if (weather == null)
         {
             _logger.Error($"Error, weather by id {id} not found");
+
+            throw new NotFoundException($"Error, weather with id {id} not found");
         }
 
         return weather;
@@ -103,6 +117,7 @@ public class WeatherRepository : IWeatherRepository
         if (currentWeather == null)
         {
             _logger.Error("Weather are not found in repository method");
+            
             throw new KeyNotFoundException("Weather are not found");
         }
 

@@ -1,4 +1,5 @@
 using Serilog;
+using WorkLearnProject4.API.Configuration;
 using WorkLearnProject4.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Host.UseSerilog();
 
 var app = builder.Build();
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsProduction())

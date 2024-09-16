@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cyi4orGe8FUe+s5EtArpN3S3B459WczHKIlIrHuPMYkhqcP7IUqwe59Cog7n+Cqvd1IvHVXxG1z6dcCfI98hgQ==",
+  "success": true,
+  "projectFilePath": "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/WorkLearnProject4.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/homeland/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,13 +1,11 @@
 
-ProjectBackendLearning.Api/obj/
-ProjectBackendLearning.Api/bin/
-ProjectBackendLearning.Bll/obj/
-ProjectBackendLearning.Bll/bin/
-ProjectBackendLearning.Core/obj/
-ProjectBackendLearning.Core/bin/
-ProjectBackendLearning.DataLayer/obj/
-ProjectBackendLearning.DataLayer/bin/
-.idea/.idea.ProjectBackendLearning/.idea/
+WorkLearnProject4.Api/obj/
+WorkLearnProject4.Api/bin/
+WorkLearnProject4.Core/obj/
+WorkLearnProject4.Core/bin/
+WorkLearnProject4.Data/obj/
+WorkLearnProject4.Data/bin/
+.idea/.idea.WorkLearnProject4/.idea/
 .vs/
 *.swp
 *.*~
@@ -52,8 +50,8 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
-ProjectBackendLearning.Api/appsettings.Development.json
+WorkLearnProject4.Api/appsettings.Development.json
 
-ProjectBackendLearning.Api/appsettings.json
+WorkLearnProject4.Api/appsettings.json
 
 logs/

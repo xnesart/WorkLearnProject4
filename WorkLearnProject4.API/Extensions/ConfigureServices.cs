@@ -1,4 +1,7 @@
-﻿using WorkLearnProject4.Data.Repository;
+﻿using FluentValidation;
+using WorkLearnProject4.Data.Models;
+using WorkLearnProject4.Data.Repository;
+using WorkLearnProject4.Data.Validation;
 
 namespace WorkLearnProject4.API.Extensions;
 
@@ -11,6 +14,7 @@ public static class ConfigureServices
         services.AddScoped<IWeatherRepository, WeatherRepository>();
         services.AddScoped<IOrdersRepository, OrdersRepository>();
         services.AddScoped<IAddressRepository, AddressRepository>();
+        services.AddScoped<IValidator<CurrentWeather>, WeatherUpdateValidator>();
         services.ConfigureDataBase(configurationManager);
     }
 }

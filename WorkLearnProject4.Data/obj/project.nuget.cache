@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SR92uISPoQnhO9gfuLS2uWJkaSlnFLqxtD99Plqspvt3wvKaQpi/gPV2OCRMz5XhQWnTjYaFTr2Xi0MhDVfUlQ==",
+  "dgSpecHash": "7pE61NA20Cs4NvJ0haWyapx47nYdSZC/gy0yEqYU7AAWhnx9QB1Xp+Ghl+1oUFIWM+QVsNQ1tk75qcfpmvaZUQ==",
   "success": true,
   "projectFilePath": "/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Data/WorkLearnProject4.Data.csproj",
   "expectedPackageFiles": [
     "/Users/homeland/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/homeland/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/homeland/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
     "/Users/homeland/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/homeland/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/homeland/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
