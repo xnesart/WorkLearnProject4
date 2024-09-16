@@ -54,7 +54,8 @@ public class WeatherController : Controller
     /// <param name="weather"></param>
     /// <returns>StatusCode success
     ///<response code = "200">Returns Ok</response>
-    ///<response code = "404">Weather with this id not found</response>
+    ///<response code = "400">Checking for null</response>
+    ///<response code = "422">Some fields are invalid</response>
     /// </returns>
     [HttpPost]
     public ActionResult AddWeather(CurrentWeather weather)
@@ -66,6 +67,14 @@ public class WeatherController : Controller
         return Ok();
     }
 
+    /// <summary>
+    /// Weather full update
+    /// </summary>
+    /// <param name="weather"></param>
+    /// <returns>
+    ///<response code = "200">Put is complete</response>
+    ///<response code = "400">Checking for null</response>
+    /// </returns>
     [HttpPut]
     public ActionResult UpdateWeather(CurrentWeather weather)
     {
@@ -75,6 +84,14 @@ public class WeatherController : Controller
         return Ok();
     }
 
+    /// <summary>
+    /// Patching weather
+    /// </summary>
+    /// <param name="weather"></param>
+    /// <returns>
+    ///<response code = "200">Patch is complete</response>
+    ///<response code = "400">Checking for null</response>
+    /// </returns>
     [HttpPatch]
     public ActionResult<CurrentWeather> PatchWeather(CurrentWeatherPatch weather)
     {
@@ -82,7 +99,15 @@ public class WeatherController : Controller
 
         return Ok(WeatherRepository.Patch(weather));
     }
-
+    
+    /// <summary>
+    /// Delete weather by id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>
+    ///<response code = "200">Deleting successfully</response>
+    ///<response code = "404"> is not found</response>
+    /// </returns>
     [HttpDelete]
     public ActionResult DeleteWeather(Guid id)
     {

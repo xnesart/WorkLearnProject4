@@ -2,8 +2,6 @@ using FluentValidation;
 using Serilog;
 using WorkLearnProject4.Core.Exceptions;
 using WorkLearnProject4.Data.Models;
-using WorkLearnProject4.Data.Validation;
-
 namespace WorkLearnProject4.Data.Repository;
 
 public class WeatherRepository : IWeatherRepository
@@ -41,7 +39,7 @@ public class WeatherRepository : IWeatherRepository
         if (foundWeather == null)
         {
             _logger.Error($"Error ,Weather with id {id} not found");
-            throw new KeyNotFoundException($"Error ,Weather with id {id} not found");
+            throw new CustomValidationException($"Error ,Weather with id {id} not found");
         }
 
         _context.Weathers.Remove(foundWeather);
@@ -56,7 +54,7 @@ public class WeatherRepository : IWeatherRepository
         if (foundWeather == null)
         {
             _logger.Error($"Error, weather with id {weather.Id} not found");
-            throw new KeyNotFoundException("Error, weather are not found");
+            throw new CustomValidationException("Error, weather are not found");
         }
 
         _context.Entry(foundWeather).CurrentValues.SetValues(weather);

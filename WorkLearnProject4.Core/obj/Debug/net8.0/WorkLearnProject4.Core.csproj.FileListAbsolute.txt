@@ -1,0 +1,13 @@
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/bin/Debug/net8.0/WorkLearnProject4.Core.deps.json
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/bin/Debug/net8.0/WorkLearnProject4.Core.dll
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/bin/Debug/net8.0/WorkLearnProject4.Core.pdb
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.csproj.AssemblyReference.cache
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.AssemblyInfoInputs.cache
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.AssemblyInfo.cs
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.csproj.CoreCompileInputs.cache
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.sourcelink.json
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.dll
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/refint/WorkLearnProject4.Core.dll
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/WorkLearnProject4.Core.pdb
+/Users/homeland/RiderProjects/WorkLearnProject4/WorkLearnProject4.Core/obj/Debug/net8.0/ref/WorkLearnProject4.Core.dll

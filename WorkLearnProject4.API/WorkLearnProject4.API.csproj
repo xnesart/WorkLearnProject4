@@ -4,6 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>1591</NoWarn> <!-- Отключение предупреждений о недокументированных членах -->
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,5 +25,7 @@
       <ProjectReference Include="..\WorkLearnProject4.Core\WorkLearnProject4.Core.csproj" />
       <ProjectReference Include="..\WorkLearnProject4.Data\WorkLearnProject4.Data.csproj" />
     </ItemGroup>
+    
+
 
 </Project>

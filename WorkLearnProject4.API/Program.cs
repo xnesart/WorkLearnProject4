@@ -1,3 +1,4 @@
+using System.Reflection;
 using Serilog;
 using WorkLearnProject4.API.Configuration;
 using WorkLearnProject4.API.Extensions;
@@ -12,7 +13,12 @@ Log.Logger = new LoggerConfiguration()
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.ConfigureApiServices(builder.Configuration);
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
+});
 builder.Host.UseSerilog();
 
 var app = builder.Build();
